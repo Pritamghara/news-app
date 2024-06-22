@@ -14,7 +14,7 @@ const Header = () => {
     <div className="bg-gray-800 text-white p-4">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
         <div className="flex justify-between items-center w-full sm:w-auto">
-          <span className='sm:font-bold text-2xl'>
+          <span className='sm:font-bold text-2xl sm:text-lg'>
             NewsFlix
           </span>
           <div className="sm:hidden">
