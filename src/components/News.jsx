@@ -10,6 +10,7 @@ const News = () => {
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const { favorites, isFavorite, addFavorite, removeFavorite } = useFavorites();
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -17,7 +18,7 @@ const News = () => {
         const response = await axios.get('https://newsapi.org/v2/everything', {
           params: {
             q: category || 'technology',
-            apiKey: '8bc0c1e2f1524bdf9a7fb3c5b95feb4c',
+            apiKey: API_KEY,
             page: page,
             pageSize: 12,
           },
